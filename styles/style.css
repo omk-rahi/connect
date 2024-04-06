@@ -1,0 +1,136 @@
+:root {
+  --primary-color: #f03e3e;
+
+  --pure-color: #fff;
+
+  --light-color-1: #e9ecef;
+  --light-color-2: #868e96;
+
+  --primary-dark-color: #212529;
+
+  --primary-box-shadow: 0 0.4rem 0.4rem rgba(33, 37, 41, 0.1);
+
+  --default-radius: 0.6rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--light-color-1);
+  color: var(--primary-dark-color);
+
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: 100;
+}
+
+svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+input {
+  font-family: inherit;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 1.6rem;
+  padding: 1.2rem 2.4rem;
+  border-radius: var(--default-radius);
+  border: 0;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: var(--primary-color);
+  color: var(--pure-color);
+}
+
+.btn--regular {
+  color: var(--primary-color);
+}
+
+.error {
+  width: 100%;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: -1.2rem;
+}
+
+.btn--full {
+  display: block;
+  width: 100%;
+}
+
+.navbar {
+  background-color: var(--pure-color);
+  box-shadow: var(--primary-box-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.4rem;
+}
+
+.auth-form {
+  max-width: 40rem;
+  background-color: var(--pure-color);
+  box-shadow: var(--primary-box-shadow);
+  margin: 12rem auto;
+  border-radius: var(--default-radius);
+  padding: 1.6rem 3.2rem 3.2rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.auth-form .form__logo {
+  width: 6rem;
+}
+
+.auth-form .form__group {
+  display: flex;
+  width: 100%;
+  gap: 1.2rem;
+  background-color: var(--light-color-1);
+  border-radius: var(--default-radius);
+  align-items: center;
+  padding: 1.2rem 1.6rem;
+}
+
+.auth-form svg {
+  color: var(--light-color-2);
+}
+
+.auth-form .form__group input {
+  border: 0;
+  background-color: transparent;
+  flex: auto;
+  font-size: 1.6rem;
+  color: var(--light-color-2);
+}
+
+.auth-form .form__group input:focus {
+  outline: none;
+}
+
+.auth-form .form__link {
+  font-size: 1.6rem;
+}
